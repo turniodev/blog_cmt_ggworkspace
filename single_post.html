@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body {
+      padding-top: 70px;
+      width: 50vw;
+      overflow-x: hidden;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0 auto;
+      background-color: rgb(0, 0, 0);
+      padding-bottom: 500px;
+      color: white;
+    }
+    #content_post img {
+      display: block;
+      margin: 20px auto;
+      width: 100%;
+      height: auto;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    #content_post {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      min-height: 500px;
+      color: #333;
+    }
+    h5 {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    #comment_textarea {
+      padding: 20px;
+      border-radius: 10px;
+      min-height: 200px;
+      width: 100%;
+    }
+    #comment_submit {
+      padding: 10px 50px;
+      border-radius: 10px;
+      background: white;
+      color: #333;
+    }
+    .comment_item {
+      padding: 20px;
+      border-radius: 10px;
+      background: white;
+      color: #333;
+      margin-top: 20px;
+    }
+    .comment_item > p:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 20px;
+    }
+    .comment_item > p:first-child a {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: bold;
+    }
+    .comment_item > p:first-child a img {
+      border-radius: 50%;
+      width: 50px;
+    }
+  </style>
+  <body>
+    <h1></h1>
+    <div id="content_post"></div>
+    <h5>Bình luận (3)</h5>
+    <div id="comments">
+      <div class="comment_input">
+        <textarea
+          id="comment_textarea"
+          placeholder="Bình luận của bạn"
+        ></textarea>
+        <button id="comment_submit">Gửi</button>
+      </div>
+      <div class="comment_wrapper"></div>
+    </div>
+  </body>
+  <script src="./comments.js"></script>
+</html>
